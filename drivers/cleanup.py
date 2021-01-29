@@ -3118,8 +3118,17 @@ def normalizeType(type):
         # temporary while LVHD is symlinked as LVM
         type = SR.TYPE_LVHD
     if type in [
-        "ext", "nfs", "ocfsoiscsi", "ocfsohba", "smb", "cephfs", "glusterfs",
-        "xfs", "zfs", "ext4"
+        "cephfs",
+        "ext", 
+        "ext4",
+        "glusterfs",
+        "moosefs"
+        "nfs",
+        "ocfsohba",
+        "ocfsoiscsi",
+        "smb",
+        "xfs",
+        "zfs"
     ]:
         type = SR.TYPE_FILE
     if type in ["linstor"]:
